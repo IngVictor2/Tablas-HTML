@@ -1,0 +1,40 @@
+/* Contenedor para hacer la tabla desplazable en móviles */
+.table-container {
+    width: 100%;
+    overflow-x: auto; /* Permite desplazamiento horizontal */
+}
+
+/* Estilo de la tabla */
+table {
+    width: 50%;
+    margin: auto;
+    border: 2px solid black;
+    border-collapse: collapse;
+    background-color: #f8f8f8;
+}
+
+/* Bordes y espaciado en celdas */
+th, td {
+    border: 1px solid red;
+    padding: 5px;
+    text-align: center;
+}
+
+/* Encabezado con fondo de color */
+th {
+    background-color: blue;
+    color: white;
+}
+
+/* Media Query para dispositivos pequeños */
+@media screen and (max-width: 600px) {
+    table {
+        width: 100%; /* Hace que la tabla ocupe toda la pantalla en móviles */
+    }
+    
+    th, td {
+        padding: 10px;
+        font-size: 14px; /* Reduce el tamaño de fuente en pantallas pequeñas */
+    }
+}
+
